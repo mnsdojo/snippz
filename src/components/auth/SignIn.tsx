@@ -1,6 +1,5 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { Button } from "@/components/ui/button";
 import { LogIn, LogOut } from "lucide-react";
 
 export default function SignIn() {
@@ -16,7 +15,7 @@ export default function SignIn() {
     );
   }
   return (
-    <button onClick={() => signIn()}>
+    <button onClick={() => signIn("github")}>
       <LogIn className="w-5 h-5" />
     </button>
   );
