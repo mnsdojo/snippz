@@ -3,9 +3,7 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import { LogIn, LogOut } from "lucide-react";
 
 export default function SignIn() {
-  const { data: session, status } = useSession();
-
-  if (status === "loading") return <div>Loading...</div>;
+  const { data: session } = useSession();
 
   if (session) {
     return (
