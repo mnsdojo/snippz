@@ -12,9 +12,5 @@ export default function SignIn() {
       </button>
     );
   }
-  return (
-    <button onClick={() => signIn("github")}>
-      <LogIn className="w-5 h-5" />
-    </button>
-  );
+  return <button onClick={() => signIn("github")}>Login</button>;
 }
